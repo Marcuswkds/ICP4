@@ -1,0 +1,22 @@
+# Naive Bayes algorithm.
+
+# Importing modules and libraries.
+import pandas as pd
+from sklearn import model_selection
+from sklearn.naive_bayes import GaussianNB
+from sklearn import metrics
+
+
+glass = pd.read_csv('glass.csv')  # Reading .csv file
+x = glass.drop('Type',axis=1)
+y = glass['Type'].values
+X_train, X_test, y_train, y_test = model_selection.train_test_split(x, y, test_size=0.4,random_state=0)  # Splitting the dataset into training and testing.
+
+model = GaussianNB()  # Using the Naive Bayes algorithm to the training set.
+model.fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+
+print("Accuracy: ",metrics.accuracy_score(y_test, y_pred))  #Outputting the accuracy to the user.
+print("classification_report\n")
+print(metrics.classification_report(y_test,y_pred))
