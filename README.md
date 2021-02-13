@@ -28,9 +28,10 @@ For the Naive Bayes method I began by implementing the modules and libraries suc
 
 ![image](https://user-images.githubusercontent.com/72952948/107841639-15920800-6d82-11eb-9aab-b08eb658c26a.png)
 
-Video Link :https://umkc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30a8653a-6b8b-40f8-84e1-acce004f90d9
 For the SVM method I repeated the steps used in Naive Bayes method with the exception of using linear kernel instead of the GaussianNB. As a result, I was able to obtain an accurary of 0.5813953488372093. This meant that the SVM method produced a higher accuracy than the Naive Bayes method. This is because when using the Naives Bayes method, all the features are independent of each other, while for SVM, all the features are related to one another, producing a more accurate result.
 
 ![image](https://user-images.githubusercontent.com/72952948/107841774-6e15d500-6d83-11eb-9e98-1d08aa230b41.png)
+
+Video Link :https://umkc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30a8653a-6b8b-40f8-84e1-acce004f90d9
 
 
