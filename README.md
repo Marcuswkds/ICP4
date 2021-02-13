@@ -20,7 +20,16 @@ I started by importing the module pandas as pd and reading the 'train.csv' file.
 
 ![image](https://user-images.githubusercontent.com/72952948/107841387-26417e80-6d80-11eb-8ded-3746f7e93122.png)
 
-I began by implementing the modules and libraries such as pandas as pd and sklearn. I then used the 'type' columns as the predicted columns such as y_train and x_train. I used test_split to split the data into 2 and used a test size of  0.4. Using the GaussianNB model I was able to predic the y_test values by giving the x_test values to the model. Lastly I printed the accuracy by using the metrics module, and the result of the accuracy was 0.313953488372093.
+For the Naive Bayes method I began by implementing the modules and libraries such as pandas as pd and sklearn. I then used the 'type' columns as the predicted columns such as y_train and x_train. I used test_split to split the data into 2 and used a test size of  0.4. Using the GaussianNB model I was able to predict the y_test values by giving the x_test values to the model. Lastly I printed the accuracy by using the metrics module, and the result of the accuracy was 0.313953488372093.
 
 ![image](https://user-images.githubusercontent.com/72952948/107841608-e1b6e280-6d81-11eb-8887-3e40339f25da.png)
+
+#Question 3 Code
+
+![image](https://user-images.githubusercontent.com/72952948/107841639-15920800-6d82-11eb-9aab-b08eb658c26a.png)
+
+For the SVM method I repeated the steps used in Naive Bayes method with the exception of using linear kernel instead of the GaussianNB. As a result, I was able to obtain an accurary of 0.5813953488372093. This meant that the SVM method produced a higher accuracy than the Naive Bayes method. This is because when using the Naives Bayes method, all the features are independent of each other, while for SVM, all the features are related to one another, producing a more accurate result.
+
+![image](https://user-images.githubusercontent.com/72952948/107841774-6e15d500-6d83-11eb-9e98-1d08aa230b41.png)
+
 
